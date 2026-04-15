@@ -16,7 +16,7 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: '2',
-    title: 'Protocolo 89: Scripts Exactos',
+    title: 'Scripts Exactos',
     thumbnail:
       'https://i.ibb.co/b5rXpT0M/Generatedimage-1776273116464.png',
     link: 'https://scriptsexatos.vercel.app/',
