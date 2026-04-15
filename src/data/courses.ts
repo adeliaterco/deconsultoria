@@ -18,7 +18,7 @@ export const courses: Course[] = [
     id: '2',
     title: 'Protocolo 89: Scripts Exactos',
     thumbnail:
-      'https://comprarplanseguro.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-12T001538.498.png',
+      'https://i.ibb.co/b5rXpT0M/Generatedimage-1776273116464.png',
     link: 'https://scriptsexatos.vercel.app/',
     items: [
       {
@@ -45,7 +45,7 @@ export const courses: Course[] = [
     id: '3',
     title: 'MANUAL CONFIDENCIAL - PDE',
     thumbnail:
-      'https://comprarplanseguro.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-11T090923.835.png',
+      'https://i.ibb.co/VWtFTvvk/Generatedimage-1776273150825.png',
     link: 'https://comprarplanseguro.shop/protocolo/',
     items: [
       {
@@ -71,7 +71,7 @@ export const courses: Course[] = [
   {
     id: '4',
     title: 'BLINDAJE EMOCIONAL',
-    thumbnail: 'https://i.ibb.co/cKY8gznp/Editedimage-1766799871174.png',
+    thumbnail: 'https://i.ibb.co/PsSrD2Zs/Generatedimage-1776273119239.png',
     link: 'https://comprarplanseguro.shop/blindaje/',
     items: [
       {
