@@ -15,32 +15,6 @@ export interface Course {
 
 export const courses: Course[] = [
   {
-    id: '1',
-    title: 'PRP Reconquista',
-    thumbnail: 'https://i.ibb.co/CK8F67my/Editedimage-1765052659367.png',
-    link: 'https://semloginplan.vercel.app/',
-    items: [
-      {
-        id: '1-1',
-        title: 'Módulo 1 - Diagnóstico',
-        type: 'video',
-        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-      },
-      {
-        id: '1-2',
-        title: 'Cronograma 21 Días',
-        type: 'pdf',
-        url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
-      },
-      {
-        id: '1-3',
-        title: 'Casos de Estudio',
-        type: 'link',
-        url: 'https://comprarplanseguro.shop/plan-a/'
-      }
-    ]
-  },
-  {
     id: '2',
     title: 'Protocolo 89: Scripts Exactos',
     thumbnail:
