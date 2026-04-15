@@ -38,7 +38,7 @@ export default function Login({ onLogin, theme, onToggleTheme }: LoginProps) {
           {/* Header */}
           <div className="text-center mb-8">
             <img 
-              src="https://i.ibb.co/CK8F67my/Editedimage-1765052659367.png" 
+              src="https://i.ibb.co/GfKhZG1k/Generatedimage-1776229502237.png" 
               alt="Logo" 
               className="w-12 h-12 rounded-full mx-auto mb-4 object-cover"
             />
