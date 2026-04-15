@@ -43,7 +43,7 @@ export const courses: Course[] = [
   },
   {
     id: '3',
-    title: 'MANUAL CONFIDENCIAL - PDE',
+    title: 'PDE',
     thumbnail:
       'https://i.ibb.co/VWtFTvvk/Generatedimage-1776273150825.png',
     link: 'https://comprarplanseguro.shop/protocolo/',
