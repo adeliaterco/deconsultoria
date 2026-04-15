@@ -43,7 +43,7 @@ export default function Login({ onLogin, theme, onToggleTheme }: LoginProps) {
               className="w-12 h-12 rounded-full mx-auto mb-4 object-cover"
             />
             <h1 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Iniciar Sistema</h1>
-            <p className="text-gray-600 dark:text-gray-400">Accede a tu Plan</p>
+            <p className="text-gray-600 dark:text-gray-400">Acceda al material de consulta</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
