@@ -1,136 +1,97 @@
-import React from 'react';
-import styled from 'styled-components';
-
-interface CourseItem {
-  id: number;
+export interface CourseItem {
+  id: string;
   title: string;
-  description: string;
-  image: string;
+  type: 'video' | 'pdf' | 'link';
+  url: string;
 }
 
-interface Course {
-  id: number;
+export interface Course {
+  id: string;
   title: string;
-  description: string;
-  image: string;
+  thumbnail: string;
+  link: string;
+  items: CourseItem[];
 }
 
-const courses: CourseItem[] = [
+export const courses: Course[] = [
   {
-    id: 1,
+    id: '2',
     title: 'Scripts Exactos',
-    description: 'Descrição detalhada do curso Scripts Exactos.',
-    image: 'https://example.com/image1.jpg',
+    thumbnail:
+      'https://i.ibb.co/b5rXpT0M/Generatedimage-1776273116464.png',
+    link: 'https://scriptsexatos.vercel.app/',
+    items: [
+      {
+        id: '2-1',
+        title: 'Las 15 Técnicas Probadas',
+        type: 'video',
+        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        id: '2-2',
+        title: 'Guía de Comunicación Digital',
+        type: 'pdf',
+        url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+      },
+      {
+        id: '2-3',
+        title: 'Acceder al Contenido',
+        type: 'link',
+        url: 'https://comprarplanseguro.shop/15-maneras/'
+      }
+    ]
   },
   {
-    id: 2,
+    id: '3',
     title: 'PDE',
-    description: 'Descrição detalhada do curso PDE.',
-    image: 'https://example.com/image2.jpg',
+    thumbnail:
+      'https://i.ibb.co/VWtFTvvk/Generatedimage-1776273150825.png',
+    link: 'https://comprarplanseguro.shop/protocolo/',
+    items: [
+      {
+        id: '3-1',
+        title: 'Los 7 Disparadores de Obsesión',
+        type: 'video',
+        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        id: '3-2',
+        title: '21 Frases de Dominancia',
+        type: 'pdf',
+        url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+      },
+      {
+        id: '3-3',
+        title: 'Acceder al Protocolo',
+        type: 'link',
+        url: 'https://comprarplanseguro.shop/protocolo/'
+      }
+    ]
   },
   {
-    id: 3,
+    id: '4',
     title: 'BLINDAJE EMOCIONAL',
-    description: 'Descrição detalhada do curso BLINDAJE EMOCIONAL.',
-    image: 'https://example.com/image3.jpg',
-  },
+    thumbnail: 'https://i.ibb.co/PsSrD2Zs/Generatedimage-1776273119239.png',
+    link: 'https://comprarplanseguro.shop/blindaje/',
+    items: [
+      {
+        id: '4-1',
+        title: 'Blindaje Total de Relación',
+        type: 'video',
+        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        id: '4-2',
+        title: 'Inmunidad Contra Otros Hombres',
+        type: 'pdf',
+        url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+      },
+      {
+        id: '4-3',
+        title: 'Acceder al Sistema',
+        type: 'link',
+        url: 'https://comprarplanseguro.shop/blindaje/'
+      }
+    ]
+  }
 ];
-
-const HeroSection = styled.section`
-  width: 100%;
-  height: 60vh;
-  background-image: url('https://i.ibb.co/B2xNxS53/Generatedimage-1776353481684.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-  }
-
-  h1 {
-    position: relative;
-    z-index: 2;
-    font-size: 3rem;
-    margin: 0;
-  }
-
-  @media (max-width: 768px) {
-    height: 40vh;
-    h1 {
-      font-size: 2rem;
-    }
-  }
-`;
-
-const CoursesContainer = styled.div`
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-`;
-
-const CourseItemComponent = styled.div`
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-
-  img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  h2 {
-    margin: 10px 0;
-    font-size: 1.5rem;
-  }
-
-  p {
-    color: #666;
-  }
-`;
-
-const App: React.FC = () => {
-  return (
-    <div>
-      <HeroSection>
-        <h1>Bem-vindo aos Cursos</h1>
-      </HeroSection>
-      <CoursesContainer>
-        {courses.map((course) => (
-          <CourseItemComponent key={course.id}>
-            <img src={course.image} alt={course.title} />
-            <h2>{course.title}</h2>
-            <p>{course.description}</p>
-          </CourseItemComponent>
-        ))}
-      </CoursesContainer>
-    </div>
-  );
-};
-
-export default App;
