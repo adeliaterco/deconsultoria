@@ -56,6 +56,11 @@ export default function Dashboard({ onSelectCourse, onLogout, theme, onToggleThe
         </div>
       </header>
 
+      {/* BANNER/HERO SECTION - INSERIR AQUI */}
+      <section className="w-full h-48 sm:h-64 md:h-80 bg-cover bg-center relative" style={{backgroundImage: `url('https://i.ibb.co/B2xNxS53/Generatedimage-1776353481684.png')`}}>
+        <div className="absolute inset-0 bg-black/20"></div>
+      </section>
+
       {/* Grid de Cursos Mobile First */}
       <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
         <div className="responsive-grid">
