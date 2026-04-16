@@ -15,6 +15,10 @@ export interface Course {
 
 export const courses: Course[] = [
   {
+    thumbnail:
+      'https://i.ibb.co/9HLtLCkg/Generatedimage-1776353481684.png',
+  },
+  {
     id: '2',
     title: 'Scripts Exactos',
     thumbnail:
