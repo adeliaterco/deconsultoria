@@ -46,7 +46,7 @@ export const courses: Course[] = [
     title: 'PDE',
     thumbnail:
       'https://i.ibb.co/VWtFTvvk/Generatedimage-1776273150825.png',
-    link: 'https://comprarplanseguro.shop/protocolo/',
+    link: 'https://ssplan.shop/pdominancia/',
     items: [
       {
         id: '3-1',
@@ -64,7 +64,7 @@ export const courses: Course[] = [
         id: '3-3',
         title: 'Acceder al Protocolo',
         type: 'link',
-        url: 'https://comprarplanseguro.shop/protocolo/'
+        url: 'https://ssplan.shop/pdominancia/' 
       }
     ]
   },
