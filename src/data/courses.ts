@@ -64,7 +64,7 @@ export const courses: Course[] = [
         id: '3-3',
         title: 'Acceder al Protocolo',
         type: 'link',
-        url: 'https://ssplan.shop/pdominancia/' 
+        url: 'https://ssplan.shop/pdominancia/'
       }
     ]
   },
@@ -72,7 +72,7 @@ export const courses: Course[] = [
     id: '4',
     title: 'BLINDAJE EMOCIONAL',
     thumbnail: 'https://i.ibb.co/PsSrD2Zs/Generatedimage-1776273119239.png',
-    link: 'https://comprarplanseguro.shop/blindaje/',
+    link: 'https://ssplan.shop/blindaje/',
     items: [
       {
         id: '4-1',
@@ -90,7 +90,7 @@ export const courses: Course[] = [
         id: '4-3',
         title: 'Acceder al Sistema',
         type: 'link',
-        url: 'https://comprarplanseguro.shop/blindaje/'
+        url: 'https://ssplan.shop/blindaje/'
       }
     ]
   }
